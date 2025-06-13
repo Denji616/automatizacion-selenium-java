@@ -11,6 +11,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.ejemplo.testng.utils.ConfigReader; // Importar la clase ConfigReader
+
 import java.time.Duration;
 
 public class PruebaLoginFuncional {
@@ -20,21 +22,29 @@ public class PruebaLoginFuncional {
 
     @BeforeMethod
     public void setUp() {
-        System.setProperty("webdriver.gecko.driver", "C:\\\\Program Files\\\\Mozilla Firefox\\\\geckodriver.exe");
+        // System.setProperty("webdriver.gecko.driver", "C:\\\\Program Files\\\\Mozilla Firefox\\\\geckodriver.exe"); // Esto no es necesario si usas WebDriverManager o en CI
         driver = new FirefoxDriver();
-        loginPage = new LoginPageFuncional(driver); // Inicializamos LoginPageFuncional
-        driver.get("https://example.com/login");
+        driver.manage().window().maximize();
+
+        loginPage = new LoginPageFuncional(driver); 
+
+        // Obtener la URL del archivo de propiedades
+        driver.get(ConfigReader.getProperty("app.url")); // Asegúrate de que el env para esta URL esté configurado (ej. -Denv=example)
     }
 
     @Test
     public void testLoginFuncional() {
-        loginPage.enterUsername("admin");
-        loginPage.enterPassword("1234");
+        // Obtener credenciales del archivo de propiedades
+        loginPage.enterUsername(ConfigReader.getProperty("app.username"));
+        loginPage.enterPassword(ConfigReader.getProperty("app.password"));
+
+        String expectedWelcomeMessage = ConfigReader.getProperty("app.welcomeMessage");
+
         loginPage.clickLoginButton();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement mensajeBienvenidaElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("mensajeBienvenida")));
-        Assert.assertTrue(mensajeBienvenidaElement.getText().contains("Bienvenido"), "El mensaje de bienvenida no contiene el texto esperado.");
+        Assert.assertTrue(mensajeBienvenidaElement.getText().contains(expectedWelcomeMessage), "El mensaje de bienvenida no contiene el texto esperado.");
     }
 
     @AfterMethod

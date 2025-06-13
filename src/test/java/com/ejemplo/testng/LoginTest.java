@@ -8,6 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.ejemplo.testng.utils.ConfigReader; // Importar la clase ConfigReader
+
 public class LoginTest {
 
     private WebDriver driver;
@@ -17,18 +19,19 @@ public class LoginTest {
     public void setUp() {
         WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
-        loginPage = new LoginPage(driver); // Inicializamos la LoginPage con el driver
-        driver.get("https://www.saucedemo.com/");
+        driver.manage().window().maximize(); 
+
+        loginPage = new LoginPage(driver); 
+        driver.get(ConfigReader.getProperty("app.url")); // Usa ConfigReader
     }
 
     @Test
     public void testLoginExitoso() {
-        loginPage.enterUsername("standard_user");
-        loginPage.enterPassword("secret_sauce");
+        loginPage.enterUsername(ConfigReader.getProperty("app.username")); // Usa ConfigReader
+        loginPage.enterPassword(ConfigReader.getProperty("app.password")); // Usa ConfigReader
         loginPage.clickLoginButton();
 
-        // Verificación de que el login fue exitoso
-        String urlEsperada = "https://www.saucedemo.com/inventory.html";
+        String urlEsperada = ConfigReader.getProperty("app.url") + "inventory.html"; 
         Assert.assertEquals(driver.getCurrentUrl(), urlEsperada, "La URL después del login no es la esperada.");
     }
 

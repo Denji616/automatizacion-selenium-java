@@ -1,12 +1,13 @@
 package com.ejemplo.testng;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals; 
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class AppTest {
+
     @Test
     public void testSuma() {
         int resultado = 2 + 2;
-        assertEquals(4, resultado);
+        Assert.assertEquals(resultado, 4, "2 + 2 should be 4");
     }
 }

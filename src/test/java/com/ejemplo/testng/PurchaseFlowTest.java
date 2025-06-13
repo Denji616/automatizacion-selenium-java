@@ -8,6 +8,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.ejemplo.testng.utils.ConfigReader; // Importar la clase ConfigReader
+
 public class PurchaseFlowTest {
 
     private WebDriver driver;
@@ -18,19 +20,20 @@ public class PurchaseFlowTest {
     public void setUp() {
         WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
-        driver.manage().window().maximize(); // Maximizar la ventana para asegurar la visibilidad
+        driver.manage().window().maximize(); 
         
         loginPage = new LoginPage(driver);
         inventoryPage = new InventoryPage(driver);
 
-        // Realizar el login antes de cada test de compra
-        driver.get("https://www.saucedemo.com/");
-        loginPage.enterUsername("standard_user");
-        loginPage.enterPassword("secret_sauce");
+        // Realizar el login antes de cada test de compra usando propiedades
+        driver.get(ConfigReader.getProperty("app.url"));
+        loginPage.enterUsername(ConfigReader.getProperty("app.username"));
+        loginPage.enterPassword(ConfigReader.getProperty("app.password"));
         loginPage.clickLoginButton();
 
         // Asegurarse de que el login fue exitoso y estamos en la página de inventario
-        Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html", "No se pudo iniciar sesión correctamente.");
+        String expectedInventoryUrl = ConfigReader.getProperty("app.url") + "inventory.html";
+        Assert.assertEquals(driver.getCurrentUrl(), expectedInventoryUrl, "No se pudo iniciar sesión correctamente.");
     }
 
     @Test
