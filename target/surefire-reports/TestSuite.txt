@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.603 s - in TestSuite
+Tests run: 10, Failures: 3, Errors: 0, Skipped: 6, Time elapsed: 19.4 s <<< FAILURE! - in TestSuite
+setUp(com.ejemplo.testng.LoginTest)  Time elapsed: 6.606 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.ejemplo.testng.LoginTest.setUp(LoginTest.java:25)
+
+setUp(com.ejemplo.testng.PurchaseFlowTest)  Time elapsed: 4.721 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.ejemplo.testng.PurchaseFlowTest.setUp(PurchaseFlowTest.java:29)
+
+setUp(com.ejemplo.testng.PruebaLoginFuncional)  Time elapsed: 7.132 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
+Host info: host: 'DESKTOP-E70T3B1', ip: '192.168.100.89'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
+	at com.ejemplo.testng.PruebaLoginFuncional.setUp(PruebaLoginFuncional.java:26)
+

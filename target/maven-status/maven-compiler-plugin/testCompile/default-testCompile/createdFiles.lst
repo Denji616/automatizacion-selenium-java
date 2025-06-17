@@ -1,5 +1,6 @@
 com\ejemplo\testng\PurchaseFlowTest.class
 com\ejemplo\testng\LoginPage.class
+com\ejemplo\testng\ExtentReporterListener.class
 com\ejemplo\testng\LoginTest.class
 com\ejemplo\testng\utils\ConfigReader.class
 com\ejemplo\testng\PruebaLoginFuncional.class

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite de Automatizacion Selenium]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.ejemplo.testng.ExtentReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="Login Functionality Test(failed)" verbose="0">
+    <classes>
+      <class name="com.ejemplo.testng.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testLoginExitoso"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ejemplo.testng.LoginTest -->
+    </classes>
+  </test> <!-- Login Functionality Test(failed) -->
+  <test thread-count="5" name="Purchase Flow Test(failed)" verbose="0">
+    <classes>
+      <class name="com.ejemplo.testng.PurchaseFlowTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testAddSauceLabsBackpackToCart"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ejemplo.testng.PurchaseFlowTest -->
+    </classes>
+  </test> <!-- Purchase Flow Test(failed) -->
+  <test thread-count="5" name="Functional Login Test(failed)" verbose="0">
+    <classes>
+      <class name="com.ejemplo.testng.PruebaLoginFuncional">
+        <methods>
+          <include name="setUp"/>
+          <include name="testLoginFuncional"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ejemplo.testng.PruebaLoginFuncional -->
+    </classes>
+  </test> <!-- Functional Login Test(failed) -->
+</suite> <!-- Failed suite [Suite de Automatizacion Selenium] -->
