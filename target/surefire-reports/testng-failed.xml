@@ -19,8 +19,8 @@
     <classes>
       <class name="com.ejemplo.testng.PurchaseFlowTest">
         <methods>
-          <include name="setUp"/>
           <include name="testAddSauceLabsBackpackToCart"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.ejemplo.testng.PurchaseFlowTest -->

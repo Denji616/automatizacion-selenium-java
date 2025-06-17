@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="1" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-16T13:55:36 ECT" name="Suite de Automatizacion Selenium" finished-at="2025-06-16T13:55:54 ECT" duration-ms="17888">
+  <suite started-at="2025-06-17T18:26:26 ECT" name="Suite de Automatizacion Selenium" finished-at="2025-06-17T18:26:44 ECT" duration-ms="17972">
     <groups>
     </groups>
-    <test started-at="2025-06-16T13:55:36 ECT" name="Login Functionality Test" finished-at="2025-06-16T13:55:42 ECT" duration-ms="5746">
+    <test started-at="2025-06-17T18:26:26 ECT" name="Login Functionality Test" finished-at="2025-06-17T18:26:35 ECT" duration-ms="9016">
       <class name="com.ejemplo.testng.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ejemplo.testng.LoginTest@184cf7cf]" started-at="2025-06-16T13:55:36 ECT" name="setUp" finished-at="2025-06-16T13:55:42 ECT" duration-ms="5409" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ejemplo.testng.LoginTest@bef2d72]" started-at="2025-06-17T18:26:26 ECT" name="setUp" finished-at="2025-06-17T18:26:35 ECT" duration-ms="8641" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -57,7 +57,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginExitoso()[pri:0, instance:com.ejemplo.testng.LoginTest@184cf7cf]" started-at="2025-06-16T13:55:42 ECT" name="testLoginExitoso" finished-at="2025-06-16T13:55:42 ECT" duration-ms="0" status="SKIP">
+        <test-method signature="testLoginExitoso()[pri:0, instance:com.ejemplo.testng.LoginTest@bef2d72]" started-at="2025-06-17T18:26:35 ECT" name="testLoginExitoso" finished-at="2025-06-17T18:26:35 ECT" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -107,15 +107,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginExitoso -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ejemplo.testng.LoginTest@184cf7cf]" started-at="2025-06-16T13:55:42 ECT" name="tearDown" finished-at="2025-06-16T13:55:42 ECT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ejemplo.testng.LoginTest@bef2d72]" started-at="2025-06-17T18:26:35 ECT" name="tearDown" finished-at="2025-06-17T18:26:35 ECT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ejemplo.testng.LoginTest -->
     </test> <!-- Login Functionality Test -->
-    <test started-at="2025-06-16T13:55:43 ECT" name="Purchase Flow Test" finished-at="2025-06-16T13:55:46 ECT" duration-ms="3942">
+    <test started-at="2025-06-17T18:26:35 ECT" name="Purchase Flow Test" finished-at="2025-06-17T18:26:39 ECT" duration-ms="4230">
       <class name="com.ejemplo.testng.PurchaseFlowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ejemplo.testng.PurchaseFlowTest@1534f01b]" started-at="2025-06-16T13:55:43 ECT" name="setUp" finished-at="2025-06-16T13:55:46 ECT" duration-ms="3938" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ejemplo.testng.PurchaseFlowTest@1ea9f6af]" started-at="2025-06-17T18:26:35 ECT" name="setUp" finished-at="2025-06-17T18:26:39 ECT" duration-ms="4214" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -165,7 +165,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddSauceLabsBackpackToCart()[pri:0, instance:com.ejemplo.testng.PurchaseFlowTest@1534f01b]" started-at="2025-06-16T13:55:46 ECT" name="testAddSauceLabsBackpackToCart" finished-at="2025-06-16T13:55:46 ECT" duration-ms="0" status="SKIP">
+        <test-method signature="testAddSauceLabsBackpackToCart()[pri:0, instance:com.ejemplo.testng.PurchaseFlowTest@1ea9f6af]" started-at="2025-06-17T18:26:39 ECT" name="testAddSauceLabsBackpackToCart" finished-at="2025-06-17T18:26:39 ECT" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -215,47 +215,24 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddSauceLabsBackpackToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ejemplo.testng.PurchaseFlowTest@1534f01b]" started-at="2025-06-16T13:55:46 ECT" name="tearDown" finished-at="2025-06-16T13:55:46 ECT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ejemplo.testng.PurchaseFlowTest@1ea9f6af]" started-at="2025-06-17T18:26:39 ECT" name="tearDown" finished-at="2025-06-17T18:26:39 ECT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ejemplo.testng.PurchaseFlowTest -->
     </test> <!-- Purchase Flow Test -->
-    <test started-at="2025-06-16T13:55:47 ECT" name="Functional Login Test" finished-at="2025-06-16T13:55:54 ECT" duration-ms="6935">
+    <test started-at="2025-06-17T18:26:40 ECT" name="Functional Login Test" finished-at="2025-06-17T18:26:43 ECT" duration-ms="3875">
       <class name="com.ejemplo.testng.PruebaLoginFuncional">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ejemplo.testng.PruebaLoginFuncional@363ee3a2]" started-at="2025-06-16T13:55:47 ECT" name="setUp" finished-at="2025-06-16T13:55:54 ECT" duration-ms="6922" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
-Host info: host: 'DESKTOP-E70T3B1', ip: '192.168.100.89'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
-            </message>
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ejemplo.testng.PruebaLoginFuncional@20deea7f]" started-at="2025-06-17T18:26:40 ECT" name="setUp" finished-at="2025-06-17T18:26:43 ECT" duration-ms="3859" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
-Host info: host: 'DESKTOP-E70T3B1', ip: '192.168.100.89'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at com.ejemplo.testng.PruebaLoginFuncional.setUp(PruebaLoginFuncional.java:26)
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+at java.base/java.util.Map.of(Map.java:1365)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at com.ejemplo.testng.PruebaLoginFuncional.setUp(PruebaLoginFuncional.java:32)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -292,43 +269,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginFuncional()[pri:0, instance:com.ejemplo.testng.PruebaLoginFuncional@363ee3a2]" started-at="2025-06-16T13:55:54 ECT" name="testLoginFuncional" finished-at="2025-06-16T13:55:54 ECT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
-Host info: host: 'DESKTOP-E70T3B1', ip: '192.168.100.89'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
-            </message>
+        <test-method signature="testLoginFuncional()[pri:0, instance:com.ejemplo.testng.PruebaLoginFuncional@20deea7f]" started-at="2025-06-17T18:26:43 ECT" name="testLoginFuncional" finished-at="2025-06-17T18:26:43 ECT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
-Host info: host: 'DESKTOP-E70T3B1', ip: '192.168.100.89'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at com.ejemplo.testng.PruebaLoginFuncional.setUp(PruebaLoginFuncional.java:26)
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+at java.base/java.util.Map.of(Map.java:1365)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at com.ejemplo.testng.PruebaLoginFuncional.setUp(PruebaLoginFuncional.java:32)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -365,19 +319,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginFuncional -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ejemplo.testng.PruebaLoginFuncional@363ee3a2]" started-at="2025-06-16T13:55:54 ECT" name="tearDown" finished-at="2025-06-16T13:55:54 ECT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ejemplo.testng.PruebaLoginFuncional@20deea7f]" started-at="2025-06-17T18:26:43 ECT" name="tearDown" finished-at="2025-06-17T18:26:43 ECT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ejemplo.testng.PruebaLoginFuncional -->
     </test> <!-- Functional Login Test -->
-    <test started-at="2025-06-16T13:55:54 ECT" name="App Test" finished-at="2025-06-16T13:55:54 ECT" duration-ms="21">
+    <test started-at="2025-06-17T18:26:44 ECT" name="App Test" finished-at="2025-06-17T18:26:44 ECT" duration-ms="21">
       <class name="com.ejemplo.testng.AppTest">
-        <test-method signature="testSuma()[pri:0, instance:com.ejemplo.testng.AppTest@3c22fc4c]" started-at="2025-06-16T13:55:54 ECT" name="testSuma" finished-at="2025-06-16T13:55:54 ECT" duration-ms="7" status="PASS">
+        <test-method signature="testSuma()[pri:0, instance:com.ejemplo.testng.AppTest@393671df]" started-at="2025-06-17T18:26:44 ECT" name="testSuma" finished-at="2025-06-17T18:26:44 ECT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuma -->
